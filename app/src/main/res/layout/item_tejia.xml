@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/item_tejia_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_tejia_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tejia_image"
+            android:layout_alignStart="@+id/item_tejia_image"
+            android:text="红烧牛肉面"
+            android:textSize="14sp"
+            android:textColor="@color/color_3"
+            android:layout_alignLeft="@+id/item_tejia_image"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_tejia_standard"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/tv_tejia_name"
+            android:layout_alignStart="@+id/item_tejia_image"
+            android:textColor="@color/color_3"
+            android:layout_alignLeft="@+id/item_tejia_image" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tejia_standard"
+            android:layout_alignStart="@+id/item_tejia_image"
+            android:layout_alignLeft="@+id/item_tejia_image">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/price_color"
+                android:layout_marginLeft="17dp"/>
+            <TextView
+                android:id="@+id/text_tejia_vipprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/price_color"
+                android:layout_marginLeft="30dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/item_img_shopcar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+               android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="95dp"
+                android:src="@drawable/shoping" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

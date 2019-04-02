@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:foreground="?listChoiceBackgroundIndicator">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_background"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:id="@+id/img_shop"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_item_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_shop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_shop"
+            android:layout_toRightOf="@+id/img_shop"
+            android:text="我的小可爱"
+            android:textColor="@color/color_3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/img_shop"
+            android:layout_toRightOf="@+id/img_shop"
+            android:text="￥"
+            android:textColor="@color/price_color"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/tv_item_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_marginLeft="28dp"
+            android:layout_toEndOf="@+id/img_shop"
+            android:layout_toRightOf="@+id/img_shop"
+            android:text="2.00"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/price_color"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_jian"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="—"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_item_shop_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/tv_jia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

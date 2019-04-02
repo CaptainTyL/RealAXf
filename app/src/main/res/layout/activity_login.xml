@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Base.login.LoginActivity"
+    android:background="@color/white">
+
+    <include layout="@layout/common_head" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp">
+        <EditText
+            android:id="@+id/ed_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:maxLength="11"/>
+    </RelativeLayout>
+    <include layout="@layout/common_view"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+       >
+        <TextView
+            android:id="@+id/tv_login_code"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="获取验证码"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/color_6"
+            />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:background="@color/color_background"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130dp"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/ed_login_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="131dp"
+            android:maxLength="4"
+            />
+    </RelativeLayout>
+    <include layout="@layout/common_view"/>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_login"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:cardBackgroundColor="@color/color_login"
+    app:cardCornerRadius="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="登  录"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+</android.support.v7.widget.CardView>
+</LinearLayout>

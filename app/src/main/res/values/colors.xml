@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffd700</color>
+    <color name="colorPrimaryDark">#ffd700</color>
+    <color name="colorAccent">#ffd700</color>
+    <color name="main_color">#ffd700</color>
+    <color name="black">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="color_3">#333333</color>
+    <color name="color_6">#666666</color>
+    <color name="color_9">#999999</color>
+    <color name="color_login">#D8D8D8</color>
+    <color name="color_background">#f2f2f2</color>
+    <color name="price_color">#FF8C00</color>
+    <color name="store_color">#EE9A00</color>
+</resources>

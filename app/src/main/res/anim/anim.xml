@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--伸缩下方图标大小-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="false">
+    <scale
+        android:duration="300"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.5"
+        android:toYScale="1.5" />    <!--然后缩小-->
+    <scale
+        android:duration="300"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:startOffset="150"
+        android:toXScale="0.5"
+        android:toYScale="0.5" />
+
+</set>
